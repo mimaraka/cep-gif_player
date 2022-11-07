@@ -21,28 +21,23 @@ function loadGif(path) {
     
     
     function init() {
-        try {
-            themeManager.init();
+        themeManager.init();
 
-            csInterface.evalScript('initialize("' + absolutePath("./") + '")', function (init_path) {
-                if (init_path != false) {
-                    loadGif(init_path);
+        csInterface.evalScript('initialize("' + absolutePath("./") + '")', function (init_path) {
+            if (init_path != false) {
+                loadGif(init_path);
+            }
+        });
+
+
+        $("#content").dblclick(function () {
+            csInterface.evalScript('openGif()', function (result) {
+                if (result != false) {
+                    loadGif(result);
+                    csInterface.evalScript('savePath("' + result + '","' + absolutePath("./") + '")');
                 }
             });
-
-
-            $("#content").dblclick(function () {
-                csInterface.evalScript('openGif()', function (result) {
-                    if (result != false) {
-                        loadGif(result);
-                        csInterface.evalScript('savePath("' + result + '","' + absolutePath("./") + '")');
-                    }
-                });
-            });
-        }
-        catch (e) {
-            alert(e);
-        }
+        });
     }
 
     init();
