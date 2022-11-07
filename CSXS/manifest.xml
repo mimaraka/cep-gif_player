@@ -2,7 +2,7 @@
 <ExtensionManifest Version="9.0" ExtensionBundleId="com.mimaraka.gifplayer" ExtensionBundleVersion="1.0.0"
 		ExtensionBundleName="GIF Player" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.mimaraka.gifplayer" Version="1.0.0" />
+		<Extension Id="com.mimaraka.gifplayer" Version="1.0" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
