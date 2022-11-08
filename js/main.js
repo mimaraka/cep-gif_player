@@ -25,7 +25,7 @@ function loadGif(path) {
 
         csInterface.evalScript('initialize("' + absolutePath("./") + '")', function (init_path) {
             if (init_path != false) {
-                loadGif(init_path);
+                loadGif(decodeURI(init_path));
             }
         });
 
@@ -33,7 +33,7 @@ function loadGif(path) {
         $("#content").dblclick(function () {
             csInterface.evalScript('openGif()', function (result) {
                 if (result != false) {
-                    loadGif(result);
+                    loadGif(decodeURI(result));
                     csInterface.evalScript('savePath("' + result + '","' + absolutePath("./") + '")');
                 }
             });

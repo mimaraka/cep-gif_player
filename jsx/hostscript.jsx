@@ -3,17 +3,16 @@
 
 
 function savePath(gif_path, script_dir) {
-    var file = new File(script_dir + "gif_path.txt");
+    var file = new File(decodeURI(script_dir) + "gif_path.txt");
 
     file.open("w");
-    file.write(gif_path);
+    file.write(decodeURI(gif_path));
     file.close();
-    alert(script_dir);
 }
 
 
 function initialize(script_dir) {
-    var file = new File(script_dir + "gif_path.txt");
+    var file = new File(decodeURI(script_dir) + "gif_path.txt");
 
     if(file.exists == true){
         file.open("r");
@@ -28,7 +27,7 @@ function initialize(script_dir) {
 
 
 function openGif() {
-    var path = File.openDialog("Select a GIF file", "GIF animation:*.gif").fsName.replace(/\\/g, "\\\\").fsName.replace(/%20/g, " ");
+    var path = File.openDialog("Select a GIF file", "GIF animation:*.gif").fsName.replace(/\\/g, "\\\\");
     
     if (path != "") {
         return path;
