@@ -8,6 +8,7 @@ function savePath(gif_path, script_dir) {
     file.open("w");
     file.write(gif_path);
     file.close();
+    alert(script_dir);
 }
 
 
