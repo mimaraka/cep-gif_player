@@ -28,7 +28,7 @@ function initialize(script_dir) {
 
 
 function openGif() {
-    var path = File.openDialog("Select a GIF file", "GIF animation:*.gif").fsName.replace(/\\/g, "\\\\");
+    var path = File.openDialog("Select a GIF file", "GIF animation:*.gif").fsName.replace(/\\/g, "\\\\").fsName.replace(/%20/g, " ");
     
     if (path != "") {
         return path;
