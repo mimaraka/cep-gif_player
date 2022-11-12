@@ -2,8 +2,14 @@
 /*global $, Folder*/
 
 
-function savePath(gif_path, script_dir) {
-    var file = new File(decodeURI(script_dir) + "gif_path.txt");
+function savePath(gif_path) {
+    var fold = new Folder(Folder.myDocuments.fsName + "/AeExtention_GifPlayer");
+
+    if(fold.exists != true){
+		Folder(fold).create();
+	}
+
+    var file = new File(Folder.myDocuments.fsName + "/AeExtention_GifPlayer/gif_path.txt");
 
     file.open("w");
     file.write(decodeURI(gif_path));
@@ -11,8 +17,8 @@ function savePath(gif_path, script_dir) {
 }
 
 
-function initialize(script_dir) {
-    var file = new File(decodeURI(script_dir) + "gif_path.txt");
+function initialize() {
+    var file = new File(Folder.myDocuments.fsName + "/AeExtention_GifPlayer/gif_path.txt");
 
     if(file.exists == true){
         file.open("r");

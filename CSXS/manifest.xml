@@ -25,7 +25,7 @@
             <!-- <Host Name="AICY" Version="[10.0,99.9]" /> -->  
             
             <!-- Premiere -->
-            <!-- <Host Name="PPRO" Version="[8.0,99.9]" /> -->
+            <Host Name="PPRO" Version="[8.0,99.9]" />
             
             <!-- AfterEffects -->
             <Host Name="AEFT" Version="[13.0,99.9]" />

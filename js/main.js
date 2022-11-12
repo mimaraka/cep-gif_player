@@ -23,7 +23,7 @@ function loadGif(path) {
     function init() {
         themeManager.init();
 
-        csInterface.evalScript('initialize("' + absolutePath("./") + '")', function (init_path) {
+        csInterface.evalScript('initialize()', function (init_path) {
             if (init_path != false) {
                 loadGif(decodeURI(init_path));
             }
@@ -34,7 +34,7 @@ function loadGif(path) {
             csInterface.evalScript('openGif()', function (result) {
                 if (result != false) {
                     loadGif(decodeURI(result));
-                    csInterface.evalScript('savePath("' + result + '","' + absolutePath("./") + '")');
+                    csInterface.evalScript('savePath("' + result + '")');
                 }
             });
         });
