@@ -1,6 +1,6 @@
 # GIF Player
 
-GIFファイルをPhotoshopやAfter Effects等のAdobeソフトのウィンドウで再生するだけのプラグインです。
+GIFファイルをPhotoshopやAfter Effects等のAdobeソフトのウィンドウで再生するだけのスクリプトです。
 
 ## ダウンロード
 [こちら](https://github.com/mimaraka/ae-gif_player/releases/latest)から最新バージョンのGIF Player(`gifplayer-v*.zxp`)をダウンロードしてください。  
