@@ -1,7 +1,6 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 /*global $, window, location, CSInterface, SystemPath, themeManager*/
 
-try {
 
 function absolutePath(path) {
     var e = document.createElement('span');
@@ -47,7 +46,7 @@ function scaleGif(scale) {
                 }
             });
         });
-        
+
 
         document.onwheel = (function (e) {
             if (e.ctrlKey) {
@@ -60,6 +59,3 @@ function scaleGif(scale) {
     init();
 
 }());
-
-}
-catch(e) {alert(e);}
