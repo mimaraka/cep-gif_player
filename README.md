@@ -3,7 +3,8 @@
 GIFファイルをPhotoshopやAfter Effects等のAdobeソフトのウィンドウで再生するだけのスクリプトです。
 
 ## ダウンロード
-[こちら](https://github.com/mimaraka/ae-gif_player/releases/latest)から最新バージョンのGIF Player(`gifplayer-v*.zxp`)をダウンロードしてください。  
+下のリンクから最新バージョンのzxpファイル(`gifplayer-v*.zxp`)をダウンロードしてください。  
+[**ダウンロード**](https://github.com/mimaraka/ae-gif_player/releases/latest)
 
 ## インストール
 ダウンロードした`gifplayer-v*.zxp`をダブルクリックして開くか、ZXP Installerにドラッグ&ドロップしてインストールしてください。
