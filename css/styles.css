@@ -3,6 +3,7 @@
 body {
     -ms-overflow-style: none !important;    /* IE, Edge 対応 */
     scrollbar-width: none !important;       /* Firefox 対応 */
+    min-width: 50px !important;
 }
 
 body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
@@ -12,13 +13,8 @@ body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
 
 #content {
     width:100%;
+    user-select: none;
 }
-
-#gifimage {
-    width: 100%;
-}
-
-
 
 
 /*

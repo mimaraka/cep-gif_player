@@ -68,14 +68,14 @@
 							<Height>300</Height>
 							<Width>300</Width>
 						</Size>
-                    <!--<MinSize>
+                    	<!-- <MinSize>
                             <Height>550</Height>
                             <Width>400</Width>
                         </MinSize>
                         <MaxSize>
                             <Height>550</Height>
                             <Width>400</Width>
-                        </MaxSize>-->
+                        </MaxSize> -->
                         
 					</Geometry>
 					<Icons>

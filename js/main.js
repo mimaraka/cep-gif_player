@@ -1,6 +1,8 @@
 /*jslint vars: true, plusplus: true, devel: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 /*global $, window, location, CSInterface, SystemPath, themeManager*/
 
+try {
+
 function absolutePath(path) {
     var e = document.createElement('span');
     e.innerHTML = '<a href="' + path + '" />';
@@ -11,6 +13,13 @@ function absolutePath(path) {
 function loadGif(path) {
     var image = document.getElementById("gifimage");
     image.src = path;
+}
+
+
+function scaleGif(scale) {
+    var image = document.getElementById("gifimage");
+    const w = Number(image.style.width.slice(0, -1));
+    image.style.width = String(w + scale) + "%";
 }
 
 
@@ -38,8 +47,19 @@ function loadGif(path) {
                 }
             });
         });
+        
+
+        document.onwheel = (function (e) {
+            if (e.ctrlKey) {
+                e.preventDefault();
+                scaleGif(-e.deltaY * 0.01);
+            }
+        });
     }
 
     init();
 
 }());
+
+}
+catch(e) {alert(e);}
