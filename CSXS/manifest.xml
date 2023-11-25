@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ExtensionManifest Version="9.0" ExtensionBundleId="com.mimaraka.gifplayer" ExtensionBundleVersion="1.2"
+<ExtensionManifest Version="9.0" ExtensionBundleId="com.mimaraka.gifplayer" ExtensionBundleVersion="1.3"
 		ExtensionBundleName="GIF Player" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<ExtensionList>
-		<Extension Id="com.mimaraka.gifplayer" Version="1.2" />
+		<Extension Id="com.mimaraka.gifplayer" Version="1.3" />
 	</ExtensionList>
 	<ExecutionEnvironment>
 		<HostList>
-			
-             <!-- Uncomment tags according to the apps you want your panel to support 
-			Make sure to change these tags to use realistic version ranges before releasing your extensions, not 99.9!
-			You may also need to change the CEP version in order to support certain apps. -->
-            
             <!-- Photoshop -->
             <Host Name="PHXS" Version="[16.0,99.9]" />
             <Host Name="PHSP" Version="[16.0,99.9]" />
             
             <!-- Illustrator -->
-            <!-- <Host Name="ILST" Version="[18.0,99.9]" /> -->
+            <Host Name="ILST" Version="[18.0,99.9]" />
             
             <!-- InDesign -->
             <!-- <Host Name="IDSN" Version="[10.0,99.9]" /> -->
@@ -41,7 +36,6 @@
             
             <!-- Dreamweaver -->
             <!-- <Host Name="DRWV" Version="[16.0,99.9]" /> -->
-
 		</HostList>
 		<LocaleList>
 			<Locale Code="All" />
@@ -68,23 +62,15 @@
 							<Height>300</Height>
 							<Width>300</Width>
 						</Size>
-                    	<!-- <MinSize>
-                            <Height>550</Height>
-                            <Width>400</Width>
+                    	<MinSize>
+                            <Height>50</Height>
+                            <Width>50</Width>
                         </MinSize>
-                        <MaxSize>
+                        <!-- <MaxSize>
                             <Height>550</Height>
                             <Width>400</Width>
                         </MaxSize> -->
-                        
-					</Geometry>
-					<Icons>
-						<Icon Type="Normal">./icons/iconNormal.png</Icon>
-						<Icon Type="RollOver">./icons/iconRollover.png</Icon>
-						<Icon Type="Disabled">./icons/iconDisabled.png</Icon>
-						<Icon Type="DarkNormal">./icons/iconDarkNormal.png</Icon>
-						<Icon Type="DarkRollOver">./icons/iconDarkRollover.png</Icon>
-					</Icons>					
+					</Geometry>				
 				</UI>
 			</DispatchInfo>
 		</Extension>

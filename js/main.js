@@ -46,7 +46,7 @@ function scaleGif(scale) {
         $("#content").dblclick(function () {
             // Gifファイルをオープン
             csi.evalScript('openGif()', function (path) {
-                if (path) {
+                if (path != null) {
                     // Gifを読み込み
                     loadGif(path);
                     // パスを保存
