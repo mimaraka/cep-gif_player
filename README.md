@@ -6,6 +6,7 @@ GIFファイルをAdobeソフトウェアのウィンドウで再生するだけ
 - Photoshop
 - Illustrator
 - After Effects
+- Premire Pro (保存機能未実装)
 
 ## ダウンロード
 下のリンクから最新バージョンのzxpファイル(`gifplayer-v*.zxp`)をダウンロードしてください。  
