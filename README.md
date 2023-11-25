@@ -1,6 +1,11 @@
 # GIF Player
 
-GIFファイルをPhotoshopやAfter Effects等のAdobeソフトのウィンドウで再生するだけのスクリプトです。
+GIFファイルをAdobeソフトウェアのウィンドウで再生するだけのスクリプトです。
+
+現在、以下のソフトウェアに対応しています。  
+- Photoshop
+- Illustrator
+- After Effects
 
 ## ダウンロード
 下のリンクから最新バージョンのzxpファイル(`gifplayer-v*.zxp`)をダウンロードしてください。  
@@ -11,6 +16,6 @@ GIFファイルをPhotoshopやAfter Effects等のAdobeソフトのウィンド�
 
 ## 使用方法
 `ウィンドウ`メニューから`エクステンション`→`GIF Player`をクリックするとGIF Playerのウィンドウが表示されます。  
-初回起動時は「Double Click here to open a GIF file.」と表示されるため、ウィンドウをダブルクリックして表示したいGIFファイルを選択します。  
+初回起動時は「Double Click here to open a GIF image.」と表示されるため、ウィンドウをダブルクリックして表示したいGIFファイルを選択します。  
 GIFが表示された後も、ウィンドウをダブルクリックして表示させるGIFファイルを変更することができます。  
 また、`Ctrl`+マウスホイール回転で画像のスケールを微調整することができます。
